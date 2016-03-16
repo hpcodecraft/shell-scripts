@@ -10,6 +10,8 @@
 # todo: check return value of brew doctor before installing stuff
 
 echo 'Installing default homebrew software'
+
+# CLI tools
 brew install wget
 brew install mc
 brew install cowsay # very important!
@@ -19,6 +21,7 @@ brew install syncthing
 brew install syncthing-inotify
 brew install cask
 
+# Quicklook plugins
 brew cask install qlcolorcode
 brew cask install qlstephen
 brew cask install qlmarkdown
@@ -27,9 +30,11 @@ brew cask install quicklook-csv
 brew cask install betterzipql
 brew cask install qlimagesize
 
+# GUI apps
 brew cask install adapter
 brew cask install cyberduck
 brew cask install firefox
+brew cask install mucommander
 brew cask install sequel-pro
 brew cask install skype
 
@@ -59,13 +64,16 @@ npm -g install jshint
 #echo 'Linking Sublime Text to /usr/local/bin/subl'
 #ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 
+echo 'Setting Applications to start automatically...'
 
+echo 'Syncthing'
 # Start syncthing at login
 ln -sfv /usr/local/opt/syncthing/*.plist ~/Library/LaunchAgents
 
 # Launch syncthing
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.syncthing.plist
 
+echo 'Syncthing-inotify'
 # Start syncthing-inotify at login
 ln -sfv /usr/local/opt/syncthing-inotify/*.plist ~/Library/LaunchAgents
 
