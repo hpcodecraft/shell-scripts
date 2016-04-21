@@ -35,6 +35,7 @@ brew cask install adapter
 brew cask install cyberduck
 brew cask install firefox
 brew cask install mucommander
+brew cask install nwjs
 brew cask install sequel-pro
 brew cask install skype
 
