@@ -56,7 +56,7 @@ npm -g install bower
 npm -g install browserify
 npm -g install coffee-script
 npm -g install grunt-cli
-npm -g install nodewebkit
+#npm -g install nodewebkit
 npm -g install react-native-cli
 npm -g install react-tools
 npm -g install weinre
