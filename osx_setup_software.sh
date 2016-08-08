@@ -20,6 +20,7 @@ brew install node
 brew install syncthing
 brew install syncthing-inotify
 brew install cask
+brew install the_silver_searcher
 
 # Quicklook plugins
 brew cask install qlcolorcode
@@ -32,13 +33,16 @@ brew cask install qlimagesize
 
 # GUI apps
 brew cask install adapter
+brew cask install atom
 brew cask install cyberduck
 brew cask install firefox
+brew cask install hyperterm
 brew cask install mucommander
 brew cask install nwjs
+brew cask install rowanj-gitx
 brew cask install sequel-pro
 brew cask install skype
-
+brew cask install virtualbox
 
 #echo 'Updating npm to the latest version'
 #npm install -g npm@latest
@@ -52,18 +56,21 @@ sudo gem install lolcat
 #curl -L http://install.ohmyz.sh | sh
 
 echo 'Installing global node modules...'
-npm -g install bower
 npm -g install browserify
-npm -g install coffee-script
 npm -g install grunt-cli
-#npm -g install nodewebkit
 npm -g install react-native-cli
 npm -g install react-tools
-npm -g install weinre
 npm -g install jshint
 
-#echo 'Linking Sublime Text to /usr/local/bin/subl'
-#ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+echo 'Installing Atom plugins'
+apm install activate-power-mode
+apm install color-picker
+apm install dash
+apm install highlight-bad-chars
+apm install language-javascript-jsx
+apm install language-rspec
+apm install swackets
+
 
 echo 'Setting Applications to start automatically...'
 
