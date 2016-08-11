@@ -2,10 +2,9 @@
 
 # todo: greet and ask for confirmation
 
-
-#echo 'Starting Homebrew installer...'
-#ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-#brew doctor # check if installation was successful
+echo 'Starting Homebrew installer...'
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew doctor # check if installation was successful
 
 # todo: check return value of brew doctor before installing stuff
 
@@ -33,16 +32,26 @@ brew cask install qlimagesize
 
 # GUI apps
 brew cask install adapter
+brew cask install adobe-creative-cloud
+# brew cask install appzapper
 brew cask install atom
 brew cask install cyberduck
+# brew cask install dash
 brew cask install firefox
+brew cask install geektool
+brew cask install gog-galaxy
+brew cask install google-chrome
 brew cask install hyperterm
 brew cask install mucommander
 brew cask install nwjs
 brew cask install rowanj-gitx
 brew cask install sequel-pro
 brew cask install skype
+brew cask install spectacle
+brew cask install steam
 brew cask install virtualbox
+brew cask install vlc
+brew cask install yujitach-menumeters
 
 #echo 'Updating npm to the latest version'
 #npm install -g npm@latest
@@ -75,15 +84,9 @@ apm install swackets
 echo 'Setting Applications to start automatically...'
 
 echo 'Syncthing'
-# Start syncthing at login
-ln -sfv /usr/local/opt/syncthing/*.plist ~/Library/LaunchAgents
-
-# Launch syncthing
-launchctl load ~/Library/LaunchAgents/homebrew.mxcl.syncthing.plist
+# Start syncthing at login and now
+brew services start syncthing
 
 echo 'Syncthing-inotify'
-# Start syncthing-inotify at login
-ln -sfv /usr/local/opt/syncthing-inotify/*.plist ~/Library/LaunchAgents
-
-# Launch syncthing-inotify
-launchctl load ~/Library/LaunchAgents/homebrew.mxcl.syncthing-inotify.plist
+# Start syncthing-inotify at login and now
+brew services start syncthing-inotify
