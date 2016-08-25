@@ -35,6 +35,7 @@ brew cask install adapter
 brew cask install adobe-creative-cloud
 # brew cask install appzapper
 brew cask install atom
+brew cask install clipgrab
 brew cask install cyberduck
 # brew cask install dash
 brew cask install firefox
@@ -47,8 +48,10 @@ brew cask install nwjs
 brew cask install rowanj-gitx
 brew cask install sequel-pro
 brew cask install skype
+brew cask install soundcloud-downloader
 brew cask install spectacle
 brew cask install steam
+brew cask install the-unarchiver
 brew cask install virtualbox
 brew cask install vlc
 brew cask install yujitach-menumeters
@@ -73,11 +76,18 @@ npm -g install jshint
 
 echo 'Installing Atom plugins'
 apm install activate-power-mode
+apm install autoprefixer
 apm install color-picker
 apm install dash
+apm install emmet
+apm install gruvbox-plus-syntax
 apm install highlight-bad-chars
+apm install jshint
+apm install language-dots
 apm install language-javascript-jsx
 apm install language-rspec
+apm install minimap
+apm install rails-rspec
 apm install swackets
 
 
