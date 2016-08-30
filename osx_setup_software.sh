@@ -11,24 +11,25 @@ brew doctor # check if installation was successful
 echo 'Installing default homebrew software'
 
 # CLI tools
-brew install wget
-brew install mc
+brew install cask
 brew install cowsay # very important!
 brew install fortune # the cow has to say something, right?
+brew install mc
 brew install node
+brew install sl # toot toot
 brew install syncthing
 brew install syncthing-inotify
-brew install cask
 brew install the_silver_searcher
+brew install wget
 
 # Quicklook plugins
-brew cask install qlcolorcode
-brew cask install qlstephen
-brew cask install qlmarkdown
-brew cask install quicklook-json
-brew cask install quicklook-csv
 brew cask install betterzipql
+brew cask install qlcolorcode
 brew cask install qlimagesize
+brew cask install qlmarkdown
+brew cask install qlstephen
+brew cask install quicklook-csv
+brew cask install quicklook-json
 
 # GUI apps
 brew cask install adapter
@@ -70,9 +71,9 @@ sudo gem install lolcat
 echo 'Installing global node modules...'
 npm -g install browserify
 npm -g install grunt-cli
+npm -g install jshint
 npm -g install react-native-cli
 npm -g install react-tools
-npm -g install jshint
 
 echo 'Installing Atom plugins'
 apm install activate-power-mode
@@ -90,13 +91,12 @@ apm install minimap
 apm install rails-rspec
 apm install swackets
 
-
 echo 'Setting Applications to start automatically...'
 
 echo 'Syncthing'
-# Start syncthing at login and now
+# Start syncthing now and at login
 brew services start syncthing
 
 echo 'Syncthing-inotify'
-# Start syncthing-inotify at login and now
+# Start syncthing-inotify now and at login
 brew services start syncthing-inotify
