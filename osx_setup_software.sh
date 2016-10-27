@@ -2,6 +2,14 @@
 
 # todo: greet and ask for confirmation
 
+
+# Install antigen
+echo 'Installing Antigen...'
+git clone https://github.com/zsh-users/antigen.git ~/.antigen
+
+# todo: setup dotfiles
+
+
 echo 'Starting Homebrew installer...'
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew doctor # check if installation was successful
@@ -13,6 +21,7 @@ echo 'Installing default homebrew software'
 # CLI tools
 brew install cask
 brew install cowsay # very important!
+brew install diff-so-fancy
 brew install fortune # the cow has to say something, right?
 brew install mc
 brew install node
@@ -21,6 +30,8 @@ brew install syncthing
 brew install syncthing-inotify
 brew install the_silver_searcher
 brew install wget
+
+brew install homebrew/dupes/nano
 
 # Quicklook plugins
 brew cask install betterzipql
@@ -39,6 +50,7 @@ brew cask install atom
 brew cask install clipgrab
 brew cask install cyberduck
 # brew cask install dash
+brew cask install dropzone
 brew cask install firefox
 brew cask install geektool
 brew cask install gog-galaxy
