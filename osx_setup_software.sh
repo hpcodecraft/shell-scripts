@@ -16,20 +16,23 @@ brew doctor # check if installation was successful
 
 # todo: check return value of brew doctor before installing stuff
 
-echo 'Installing default homebrew software'
+echo 'Installing default homebrew software...'
 
 # CLI tools
 brew install cask
 brew install cowsay # very important!
 brew install diff-so-fancy
 brew install fortune # the cow has to say something, right?
-brew install mc
+brew install git-extras
+brew install midnight-commander
 brew install node
 brew install sl # toot toot
 brew install syncthing
 brew install syncthing-inotify
 brew install the_silver_searcher
+brew install tree
 brew install wget
+brew install yarn
 
 brew install homebrew/dupes/nano
 
@@ -63,6 +66,7 @@ brew cask install sequel-pro
 brew cask install skype
 brew cask install soundcloud-downloader
 brew cask install spectacle
+brew cask install sqlitebrowser
 brew cask install steam
 brew cask install the-unarchiver
 brew cask install virtualbox
@@ -72,7 +76,7 @@ brew cask install yujitach-menumeters
 #echo 'Updating npm to the latest version'
 #npm install -g npm@latest
 
-echo 'Installing lolcat'
+echo 'Installing global ruby gems...'
 sudo gem install lolcat
 
 #echo 'Starting Oh My Zsh installer...'
