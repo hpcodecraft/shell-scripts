@@ -2,19 +2,25 @@
 
 # todo: greet and ask for confirmation
 
+echo "Installing xcode-stuff"
+xcode-select --install
 
-# Install antigen
 echo 'Installing Antigen...'
 git clone https://github.com/zsh-users/antigen.git ~/.antigen
 
 # todo: setup dotfiles
 
 
-echo 'Starting Homebrew installer...'
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew doctor # check if installation was successful
+# Check for Homebrew,
+# Install if we don't have it
+if test ! $(which brew); then
+  echo "Installing homebrew..."
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
 
-# todo: check return value of brew doctor before installing stuff
+# Update homebrew recipes
+echo "Updating homebrew..."
+brew update
 
 echo 'Installing default homebrew software...'
 
@@ -72,6 +78,9 @@ brew cask install the-unarchiver
 brew cask install virtualbox
 brew cask install vlc
 brew cask install yujitach-menumeters
+
+echo "Cleaning up brew"
+brew cleanup
 
 #echo 'Updating npm to the latest version'
 #npm install -g npm@latest
