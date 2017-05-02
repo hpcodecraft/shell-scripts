@@ -37,6 +37,7 @@ brew install syncthing
 brew install syncthing-inotify
 brew install the_silver_searcher
 brew install tree
+brew install watchman
 brew install wget
 brew install yarn
 
