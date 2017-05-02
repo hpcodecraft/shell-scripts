@@ -54,17 +54,18 @@ brew cask install quicklook-json
 # GUI apps
 brew cask install adapter
 brew cask install adobe-creative-cloud
-# brew cask install appzapper
+brew cask install appzapper
 brew cask install atom
 brew cask install clipgrab
 brew cask install cyberduck
-# brew cask install dash
+brew cask install dash
 brew cask install dropzone
 brew cask install firefox
 brew cask install geektool
 brew cask install gog-galaxy
 brew cask install google-chrome
 brew cask install hyperterm
+brew cask install launchcontrol
 brew cask install mucommander
 brew cask install nwjs
 brew cask install rowanj-gitx
@@ -95,16 +96,29 @@ sudo gem install lolcat
 
 echo 'Installing global node modules...'
 npm -g install browserify
+npm -g install electron
+npm -g install eslint
+npm -g install eslint-nibble
+npm -g install eslint-plugin-react
 npm -g install grunt-cli
 npm -g install jshint
+npm -g install npm
+npm -g install phantomjs
+npm -g install prettyjson
 npm -g install react-native-cli
 npm -g install react-tools
+npm -g install ungit
+npm -g install webpack
 
 echo 'Installing Atom plugins'
 apm install activate-power-mode
+apm install aesthetic-ui
+apm install atom-material-ui
 apm install autoprefixer
 apm install color-picker
 apm install dash
+apm install dracula-theme
+apm install dracula-ui
 apm install emmet
 apm install gruvbox-plus-syntax
 apm install highlight-bad-chars
@@ -112,9 +126,15 @@ apm install jshint
 apm install language-dots
 apm install language-javascript-jsx
 apm install language-rspec
+apm install linter
+apm install linter-eslint
+apm install linter-stylelint
 apm install minimap
+apm install princess-syntax
 apm install rails-rspec
 apm install swackets
+apm install tree-view-bundler
+apm install vivid
 
 echo 'Setting Applications to start automatically...'
 
