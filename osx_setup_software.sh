@@ -100,9 +100,7 @@ npm -g install browserify
 npm -g install electron
 npm -g install eslint
 npm -g install eslint-nibble
-npm -g install eslint-plugin-react
 npm -g install grunt-cli
-npm -g install jshint
 npm -g install npm
 npm -g install phantomjs
 npm -g install prettyjson
@@ -123,7 +121,6 @@ apm install dracula-ui
 apm install emmet
 apm install gruvbox-plus-syntax
 apm install highlight-bad-chars
-apm install jshint
 apm install language-dots
 apm install language-javascript-jsx
 apm install language-rspec
