@@ -69,6 +69,7 @@ brew cask install hyperterm
 brew cask install launchcontrol
 brew cask install mucommander
 brew cask install nwjs
+brew cask install real-vnc
 brew cask install sequel-pro
 brew cask install skype
 brew cask install soundcloud-downloader
