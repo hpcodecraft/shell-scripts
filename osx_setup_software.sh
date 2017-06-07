@@ -69,7 +69,6 @@ brew cask install hyperterm
 brew cask install launchcontrol
 brew cask install mucommander
 brew cask install nwjs
-brew cask install rowanj-gitx
 brew cask install sequel-pro
 brew cask install skype
 brew cask install soundcloud-downloader
@@ -96,8 +95,6 @@ sudo gem install lolcat
 #curl -L http://install.ohmyz.sh | sh
 
 echo 'Installing global node modules...'
-npm -g install browserify
-npm -g install electron
 npm -g install eslint
 npm -g install eslint-nibble
 npm -g install grunt-cli
