@@ -98,6 +98,7 @@ sudo gem install lolcat
 echo 'Installing global node modules...'
 npm -g install eslint
 npm -g install eslint-nibble
+npm -g install eslint-plugin-react
 npm -g install grunt-cli
 npm -g install npm
 npm -g install phantomjs
