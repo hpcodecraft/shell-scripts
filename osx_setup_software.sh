@@ -61,6 +61,7 @@ brew cask install clipgrab
 brew cask install cyberduck
 brew cask install dash
 brew cask install dropzone
+brew cask install etcher
 brew cask install firefox
 brew cask install geektool
 brew cask install gog-galaxy
