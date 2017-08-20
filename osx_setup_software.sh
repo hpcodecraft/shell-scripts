@@ -29,6 +29,7 @@ brew install cask
 brew install cowsay # very important!
 brew install diff-so-fancy
 brew install fortune # the cow has to say something, right?
+brew install fzf
 brew install git-extras
 brew install midnight-commander
 brew install node
